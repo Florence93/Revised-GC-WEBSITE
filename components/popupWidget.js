@@ -15,7 +15,7 @@ export default function PopupWidget() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [Message, setMessage] = useState("");
 
-  const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
+  const userName = useWatch({control, name: "name", defaultValue: "Someone" });
 
   const onSubmit = async (data, e) => {
     console.log(data);
@@ -108,7 +108,7 @@ export default function PopupWidget() {
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-indigo-600">
                   <h3 className="text-lg text-white">How can we help?</h3>
                   <p className="text-white opacity-50">
-                    We usually respond in a few hours
+                    We usually respond in few minutes
                   </p>
                 </div>
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
@@ -116,17 +116,18 @@ export default function PopupWidget() {
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
                       <input
                         type="hidden"
-                        value="YOUR_ACCESS_KEY_HERE"
+                        value="2b14f3d7-620e-4f7c-870f-432e4b29a327"
                         {...register("apikey")}
                       />
                       <input
                         type="hidden"
-                        value={`${userName} sent a message from Nextly`}
+                        value=//{`${userName} sent a message for Gemway Consult Website`}
+                              "New message for Gemway Consult"
                         {...register("subject")}
                       />
                       <input
                         type="hidden"
-                        value="Nextly Template"
+                        value='New Email from Gemway Consult Website'
                         {...register("from_name")}
                       />
                       <input
@@ -246,20 +247,7 @@ export default function PopupWidget() {
                           )}
                         </button>
                       </div>
-                      <p
-                        className="text-xs text-center text-gray-400"
-                        id="result">
-                        <span>
-                          Powered by{" "}
-                          <a
-                            href="https://Web3Forms.com"
-                            className="text-gray-600"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            Web3Forms
-                          </a>
-                        </span>
-                      </p>
+                      
                     </form>
                   )}
 

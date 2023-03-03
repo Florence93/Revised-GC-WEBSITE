@@ -35,21 +35,31 @@ export default function Faq() {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Do I need IELTS to process admission and visa for Canada, USA, UK",
+    answer: "Yes and no. It depends on the school but as long as you have at least C6 in English, admission is possible.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "What countries do you process admission for?",
+    answer: "UK, USA, Canada, France",
   },
-  {
+  /*{
     question: "What is your refund policy? ",
     answer:
       "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+  },*/
+  {
+    question: "Do you process tourist visa? ",
+    answer:
+      "Yes, we process tourist and business visa for France",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "As a student, can i travel with my family? ",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Yes but it depends on the family. For example, France does not allow that but UK, USA and Canada allows that.",
+  },
+  {
+    question: "Wjat are the requirements for the admission and visa? ",
+    answer:
+      "Send a message to gemwayconsult@gmail.com and we will send you all required documents.",
   },
 ];

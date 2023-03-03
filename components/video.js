@@ -2,7 +2,7 @@ import { useState } from "react";
 import Container from "./container";
 
 export default function Video() {
-  const [playVideo, setPlayVideo] = useState(false);
+  const [playVideo, setPlayVideo] = useState(true);
   return (
     <Container>
       <div className="w-full max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl ">
@@ -27,8 +27,8 @@ export default function Video() {
           )}
           {playVideo && (
             <iframe
-              src="https://www.youtube-nocookie.com/embed/aOq49euWnIo?controls=0&autoplay=1"
-              title="YouTube video player"
+              src="https://youtube.com/embed/ArjljeOmdP0"
+              title="Why Should I Study Abroad"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
